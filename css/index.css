@@ -1,0 +1,27 @@
+body{
+    background-color:antiquewhite;
+}
+.picture{
+ 
+    display: block;
+    width: 150px;
+    border-radius: 50%;
+   
+
+   
+}
+.pic{
+    border: 2px solid red;
+   width: 30%;
+
+}
+.header{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 30px;
+    font-size: large;
+    font-weight: bold;
+    width: 100%;
+}
