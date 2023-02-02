@@ -1,27 +1,120 @@
-body{
-    background-color:antiquewhite;
+.detailsPic{
+    border: 6px solid beige ;
+   border-radius: 50%;
+    width:100px; 
+    height: auto
 }
-.picture{
- 
-    display: block;
-    width: 150px;
-    border-radius: 50%;
-   
-
-   
-}
-.pic{
-    border: 2px solid red;
-   width: 30%;
+.container{
+    
+    display:flex;
+    flex-direction: row;
+    width:100% ;
+    height: 650px;
 
 }
-.header{
-    border: 2px solid red;
+.containerInformation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    background-color: rgb(20, 20, 50);
+    color:beige;
+    height: 100%;
+}
+
+.icons{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    gap: 30px;
-    font-size: large;
-    font-weight: bold;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    
 }
+
+.conatinerAbout{
+   
+   
+   background-image: url(/images/background.png);
+   background-repeat: no-repeat;
+   background-size:1200px;
+   width: 100%;
+   height: auto;
+   overflow: hidden;
+   overflow-y:scroll;
+   scrollbar-3dlight-color: blue;
+   
+
+   
+   
+  
+}
+
+.text-box{
+    
+   content:attr(data-text);
+   position: absolute;
+   margin-top: 15%;
+   margin-left: 30%;
+   top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    color: rgb(28, 28, 77);
+    -webkit-text-troke:0vw rgb(20, 20, 59);
+    border-right: 2px solid beige;
+    overflow: hidden;
+    animation: animate 6s linear ;
+    animation-duration: 5s;  
+   animation-fill-mode: forwards;
+
+
+}
+
+@keyframes animate{
+   
+    from {top: 200px; }
+    to {top: 0px;}
+}
+
+conatinerAbout ::-webkit-scrollbar{
+    height: 1em;
+}
+
+
+
+/* 
+.div.ex1 {
+    background-color: lightblue;
+    width: 110px;
+    height: 110px;
+    overflow: scroll;
+  }
+  
+  div.ex2 {
+    background-color: lightblue;
+    width: 110px;
+    height: 110px;
+    overflow: hidden;
+  }
+  
+  div.ex3 {
+    background-color: lightblue;
+    width: 110px;
+    height: 110px;
+    overflow: auto;
+  }
+  
+  div.ex4 {
+    background-color: lightblue;
+    width: 110px;
+    height: 110px;
+    overflow: clip;
+  }
+  
+  div.ex5 {
+    background-color: lightblue;
+    width: 110px;
+    height: 110px;
+    overflow: visible;
+  } */
